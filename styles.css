@@ -366,7 +366,7 @@ button {
 
 .race-benefits__grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   min-height: 7.2rem;
 }
 
@@ -670,20 +670,25 @@ button {
   }
 
   .race-benefits__grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .sponsors-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .race-benefits__grid div:nth-child(3) {
-    border-left: 0;
+  .race-benefits__grid div:nth-child(4),
+  .race-benefits__grid div:nth-child(5) {
     border-top: 1px solid rgba(241, 91, 155, 0.22);
   }
 
   .race-benefits__grid div:nth-child(4) {
-    border-top: 1px solid rgba(241, 91, 155, 0.22);
+    border-left: 0;
+  }
+
+  .race-benefits__grid div:nth-child(5) {
+    grid-column: 2;
+    border-left: 0;
   }
 }
 
@@ -730,6 +735,25 @@ button {
 
   .hero__poster figcaption {
     right: 0.3rem;
+  }
+
+  .race-benefits__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .race-benefits__grid div:nth-child(3),
+  .race-benefits__grid div:nth-child(4),
+  .race-benefits__grid div:nth-child(5) {
+    border-top: 1px solid rgba(241, 91, 155, 0.22);
+  }
+
+  .race-benefits__grid div:nth-child(3),
+  .race-benefits__grid div:nth-child(5) {
+    border-left: 0;
+  }
+
+  .race-benefits__grid div:nth-child(5) {
+    grid-column: 1 / -1;
   }
 
   .race-benefits__grid div {
