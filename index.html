@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flores y Kilómetros | ChicRunning</title>
+    <meta
+      name="description"
+      content="Conoce a los auspiciadores de Flores y Kilómetros, la carrera 5K de ChicRunning."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar container" aria-label="Navegación principal">
+        <a class="brand" href="#inicio" aria-label="ChicRunning, inicio">
+          <span class="brand__chic">chic</span>
+          <span class="brand__running">running</span>
+          <span class="brand__heart" aria-hidden="true">♥</span>
+        </a>
+        <a href="#auspiciadores" class="btn btn--outline">Nuestros aliados</a>
+      </nav>
+
+      <div id="inicio" class="hero__content container">
+        <div class="hero__copy">
+          <p class="eyebrow">ChicRunning presenta</p>
+          <h1><span>Flores</span><em>y</em> kilómetros</h1>
+          <p class="hero__motto">Corremos por una flor,<br />corremos por nosotras ♡</p>
+          <p class="hero__text">
+            Una ruta para compartir, florecer y avanzar juntas. Cinco kilómetros con
+            energía, comunidad y propósito.
+          </p>
+
+          <p class="brand-slogan" aria-label="Lema de ChicRunning">
+            <span>Mujeres reales. Metas reales.</span>
+            <span lang="en">Real women. Real goals.</span>
+          </p>
+
+          <div class="event-details" aria-label="Información de la carrera">
+            <div class="event-detail">
+              <span class="event-detail__icon" aria-hidden="true">23</span>
+              <span><strong>Miércoles</strong>23 de septiembre</span>
+            </div>
+            <div class="event-detail">
+              <span class="event-detail__icon" aria-hidden="true">◷</span>
+              <span><strong>Hora</strong>8:00 p. m.</span>
+            </div>
+            <div class="event-detail event-detail--wide">
+              <span class="event-detail__icon" aria-hidden="true">●</span>
+              <span><strong>Punto de encuentro</strong>Parque Alipio Ponce Vásquez</span>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#auspiciadores" class="btn btn--primary">Conoce a los auspiciadores</a>
+            <span class="race-chip"><strong>5K</strong> · Inscripción S/10</span>
+          </div>
+        </div>
+
+        <figure class="hero__poster">
+          <img
+            src="assets/flores-y-kilometros.jpeg"
+            alt="Afiche oficial de la carrera Flores y Kilómetros de ChicRunning"
+          />
+          <figcaption>Mismo ritmo, más historias.</figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <main>
+      <section class="race-benefits" aria-label="Incluido en la carrera">
+        <div class="container race-benefits__grid">
+          <div><span aria-hidden="true">❀</span>Ramo de flores</div>
+          <div><span aria-hidden="true">♢</span>Hidratación</div>
+          <div><span aria-hidden="true">🎗</span>Cinta amarilla</div>
+          <div><span aria-hidden="true">⌁</span>Pacers en toda la ruta</div>
+        </div>
+      </section>
+
+      <section id="auspiciadores" class="container section">
+        <div class="section__header">
+          <div>
+            <p class="eyebrow eyebrow--pink">Quienes hacen florecer esta ruta</p>
+            <h2>Nuestros auspiciadores</h2>
+          </div>
+          <p>
+            Marcas que creen en una comunidad de mujeres que se acompaña, se inspira y
+            sigue avanzando.
+          </p>
+        </div>
+
+        <div id="sponsorsGrid" class="sponsors-grid" aria-live="polite"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__content">
+        <span class="footer__heart" aria-hidden="true">♡</span>
+        <p>Más que una ruta, una comunidad.</p>
+        <span>@chicrunning</span>
+      </div>
+    </footer>
+
+    <script src="sponsors-data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
