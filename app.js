@@ -147,6 +147,7 @@ async function loadSponsors() {
     if (window.location.protocol === "file:") {
       sponsors = window.SPONSORS;
     } else {
+      const response = await fetch("sponsors.json");
       if (!response.ok) {
         throw new Error(`No se pudo cargar el JSON: ${response.status}`);
       }
