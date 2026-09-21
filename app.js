@@ -49,7 +49,8 @@ function renderSocialLinks(socials = {}, sponsorName = "") {
 
   if (activeSocials.length === 1 && activeSocials[0][0] === "instagram") {
     const instagramUrl = activeSocials[0][1];
-    const handle = instagramUrl.match(/instagram\.com\/([^/?#]+)/i)?.[1] || sponsorName;
+    const handle =
+      instagramUrl.match(/instagram\.com\/([^/?#]+)/i)?.[1] || sponsorName;
 
     return `
       <div class="socials socials--single">
@@ -95,7 +96,10 @@ function renderSocialLinks(socials = {}, sponsorName = "") {
 function getSponsorLogoPath(logo = "") {
   if (!logo) return "";
 
-  const isAbsolutePath = /^(?:https?:)?\/\//i.test(logo) || logo.startsWith("data:") || logo.includes("/");
+  const isAbsolutePath =
+    /^(?:https?:)?\/\//i.test(logo) ||
+    logo.startsWith("data:") ||
+    logo.includes("/");
   return isAbsolutePath ? logo : `assets/sponsors/${logo}`;
 }
 
@@ -143,7 +147,6 @@ async function loadSponsors() {
     if (window.location.protocol === "file:") {
       sponsors = window.SPONSORS;
     } else {
-      const response = await fetch("sponsors.json");
       if (!response.ok) {
         throw new Error(`No se pudo cargar el JSON: ${response.status}`);
       }

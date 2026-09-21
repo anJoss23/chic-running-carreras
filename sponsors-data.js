@@ -60,4 +60,14 @@ window.SPONSORS = [
       instagram: "https://www.instagram.com/yiayogurtgriego/",
     },
   },
+  {
+    name: "BOOST",
+    logo: "BOOST.jpeg",
+    tagline: "Agencia de marketing digital.",
+    description:
+      "Estrategia, creatividad y análisis. Impulsamos y posicionamos tu marca en el mercado digital.",
+    socials: {
+      instagram: "https://www.instagram.com/boost_agenciamkt/",
+    },
+  },
 ];
