@@ -149,7 +149,9 @@ async function loadSponsors() {
     } else {
       const response = await fetch("sponsors.json");
       if (!response.ok) {
-        throw new Error(`No se pudo cargar el JSON: ${response.status}`);
+        throw new Error(
+          `No se pudo cargar el JSON incorrecto: ${response.status}`,
+        );
       }
 
       sponsors = await response.json();
