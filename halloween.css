@@ -55,3 +55,71 @@
 
 .hero__countdown-slot { position: absolute; z-index: 3; bottom: 2.2rem; left: 50%; transform: translateX(-50%); }.hero__countdown { position: static; width: fit-content; margin: 0; padding: .65rem .76rem; border-color: rgba(255,255,255,.46); background: rgba(255,250,245,.96); box-shadow: 0 12px 26px rgba(22,8,31,.22); transform: none; }.hero__countdown::before { display: none; }.hero__countdown .countdown__units { gap: .5rem; }.hero__countdown .countdown__units div { min-width: 3.85rem; padding: .46rem .55rem; border-radius: .7rem; background: #fdf9ff; }.hero__countdown .countdown__units strong { color: var(--plum); font-size: 1.55rem; }.hero__countdown .countdown__units span { color: var(--berry); font-size: .56rem; }.hero__actions { gap: .75rem; }
 @media (max-width: 760px) { .hero__countdown-slot { position: relative; bottom: auto; left: auto; width: min(100% - 1.5rem, 610px); margin: -1.8rem auto 1.4rem; transform: none; }.hero__countdown { width: 100%; }.hero__countdown .countdown__units { width: 100%; }.hero__countdown .countdown__units div { flex: 1; min-width: 0; } }
+
+/* Ajustes de lectura y estructura para pantallas pequeñas. */
+html, body { overflow-x: hidden; }
+img { max-width: 100%; }
+.hero__content > *, .detail-grid > *, .include-grid > *, .prize-grid > *, .jury__content > *, .allies__content > *, .experience__steps > * { min-width: 0; }
+
+@media (max-width: 900px) {
+  .hero { min-height: auto; padding-bottom: 0; }
+  .hero__content { grid-template-columns: 1fr; gap: 2rem; padding: 3.25rem 0 2.5rem; text-align: center; }
+  .hero__copy { max-width: 650px; margin-inline: auto; }
+  .hero h1 { font-size: clamp(3.25rem, 11vw, 5.4rem); line-height: .84; }
+  .hero h1 em { display: block; margin-top: .12em; font-size: .55em; }
+  .hero__copy .hero__lead, .hero__copy .brand-slogan { margin-inline: auto; }
+  .hero__actions { justify-content: center; }
+  .hero__poster { width: min(100%, 430px); margin-inline: auto; }
+  .hero__countdown-slot { position: relative; inset: auto; width: min(100% - 1.5rem, 610px); margin: 0 auto 2rem; transform: none; }
+  .hero__countdown { width: 100%; }
+  .detail-grid, .include-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .jury__content, .allies__content { grid-template-columns: 1fr; align-items: start; }
+  .allies__content .btn { width: fit-content; }
+  .experience__steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .experience__steps li:nth-child(2)::after { display: none; }
+  .allies__grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .container { width: min(100% - 1.25rem, 1120px); }
+  .topbar { min-height: 68px; gap: .65rem; }
+  .brand { font-size: 1.7rem; }
+  .nav-link--cta { padding: .58rem .7rem; font-size: .62rem; letter-spacing: .05em; white-space: nowrap; }
+  .hero__content { gap: 1.65rem; padding-top: 2.35rem; }
+  .hero h1 { font-size: clamp(3rem, 14.2vw, 4.35rem); }
+  .hero__lead { font-size: .96rem; line-height: 1.6; }
+  .brand-slogan { font-size: .62rem; line-height: 1.6; }
+  .hero__actions { width: 100%; gap: .65rem; }
+  .hero__actions .btn { flex: 1; min-width: 0; padding-inline: .75rem; }
+  .hero__details-link { font-size: .75rem; white-space: nowrap; }
+  .hero__poster { max-width: 330px; }
+  .hero__countdown-slot { width: min(100% - 1.25rem, 610px); margin: 0 auto 1.35rem; }
+  .hero__countdown { gap: .6rem; padding: .45rem; }
+  .hero__countdown > p { font-size: .96rem; }
+  .hero__countdown .countdown__units { width: 100%; gap: .25rem; }
+  .hero__countdown .countdown__units div { min-width: 0; padding: .38rem .18rem; }
+  .hero__countdown .countdown__units strong { font-size: 1.16rem; }
+  .hero__countdown .countdown__units span { font-size: .42rem; letter-spacing: .04em; }
+  .details, .prizes, .experience, .jury, .allies, .history--compact { padding-block: 3.75rem; }
+  .section-heading h2, .allies h2, .prizes h2, .jury h2 { font-size: clamp(2.55rem, 12vw, 3.6rem); line-height: .9; }
+  .detail-grid, .include-grid, .prize-grid { grid-template-columns: 1fr; }
+  .detail-card, .include-card, .prize-card { min-height: 0; padding: 1.2rem; }
+  .signup { padding: 1.55rem; margin-bottom: 3.75rem; }
+  .signup h2 { font-size: 2.45rem; }
+  .experience__steps { grid-template-columns: 1fr; gap: 1.6rem; }
+  .experience__steps li { min-height: 0; }
+  .experience__steps li:not(:last-child)::after { top: auto; right: 50%; bottom: -1.28rem; transform: translateX(50%) rotate(90deg); }
+  .experience__steps li:nth-child(2)::after { display: grid; }
+  .jury__content { gap: 2rem; }
+  .ally-card { grid-template-columns: 76px minmax(0, 1fr); gap: .8rem; padding: .85rem; }
+  .ally-card__logo { height: 76px; padding: .45rem; }
+  .ally-card__logo img { max-height: 58px; }
+  .ally-card h3 { font-size: 1.75rem; }
+  .ally-card__label { max-width: 185px; font-size: .56rem; line-height: 1.35; }
+  .ally-card div > p:last-child { font-size: .8rem; }
+  .ally-card__link, .ally-card__pending { grid-column: 1 / -1; }
+  .history--compact .race-card { grid-template-columns: 82px minmax(0, 1fr); }
+  .history--compact .race-card__content { padding: .9rem; }
+  .history--compact .race-card h3 { font-size: 1.55rem; }
+  .floating-signup { right: .75rem; bottom: .75rem; padding: .75rem .9rem; font-size: .74rem; }
+}
