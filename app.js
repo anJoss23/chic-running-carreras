@@ -1,4 +1,5 @@
 const sponsorsGrid = document.getElementById("sponsorsGrid");
+const sponsorsSource = document.documentElement.dataset.sponsorsSource || "sponsors.json";
 
 const socialIcons = {
   instagram: `
@@ -147,7 +148,7 @@ async function loadSponsors() {
     if (window.location.protocol === "file:") {
       sponsors = window.SPONSORS;
     } else {
-      const response = await fetch("sponsors.json");
+      const response = await fetch(sponsorsSource);
       if (!response.ok) {
         throw new Error(
           `No se pudo cargar el JSON incorrecto: ${response.status}`,
