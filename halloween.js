@@ -68,7 +68,7 @@ const createSparkles = (x, y) => {
   });
 };
 
-document.querySelectorAll('a[href="#inscribete"]').forEach((link) => {
+document.querySelectorAll(".signup-link").forEach((link) => {
   link.addEventListener("click", (event) => {
     const bounds = link.getBoundingClientRect();
     createSparkles(event.clientX || bounds.left + bounds.width / 2, event.clientY || bounds.top + bounds.height / 2);
