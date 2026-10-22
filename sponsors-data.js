@@ -5,7 +5,7 @@ window.SPONSORS = [
     name: "Amarella",
     logo: "amarella.jpeg",
     tagline: "Ropa y accesorios en tendencia.",
-    description: "Piezas pensadas para restaurar tu esencia.",
+    description: "Piezas pensadas para resaltar tu esencia.",
     socials: {
       instagram: "https://www.instagram.com/amarella.peru/",
     },
