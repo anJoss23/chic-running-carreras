@@ -23,9 +23,9 @@ window.SPONSORS = [
   {
     name: "Evolution Fisioterapia",
     logo: "evolution.jpeg",
-    tagline: "Belleza, fisioterapia y rehabilitación en un solo lugar.",
+    tagline: "Fisioterapia, estética y bienestar.",
     description:
-      "Profesionales calificados y tratamientos seguros y efectivos.",
+      "Un espacio dedicado a cuidar tu salud, realzar tu belleza y transformar tu bienestar con atención personalizada y profesional.",
     socials: {
       instagram: "https://www.instagram.com/evolutionfisioestetica/",
     },
