@@ -34,6 +34,19 @@ if (alliesGrid) {
     <a class="ally-card__link" href="https://www.instagram.com/sofyfloresq?exln=ZTBvcG81a245ZzE=" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
   `;
   alliesGrid.append(farmasiCard);
+
+  const pettycanCard = document.createElement("article");
+  pettycanCard.className = "ally-card";
+  pettycanCard.innerHTML = `
+    <div class="ally-card__logo"><img src="assets/sponsors/pettycan.jpg" alt="Logo de Pettycan Pet Shop & Spa" /></div>
+    <div>
+      <p class="ally-card__label">Pet shop &amp; spa</p>
+      <h3>Pettycan Pet Shop &amp; Spa</h3>
+      <p>Una marca dedicada al cuidado y engreimiento de nuestros peluditos, con productos, accesorios, disfraces y servicios de spa para que luzcan increíbles y se sientan amados. ¡Donde cada huellita deja una gran historia de amor!</p>
+    </div>
+    <a class="ally-card__link" href="https://www.instagram.com/pettycanpetshop?vrfl=MTQxN2Z6bHVybWY0YQ==" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
+  `;
+  alliesGrid.append(pettycanCard);
 }
 
 const countdown = document.querySelector("[data-event-date]");
