@@ -80,6 +80,10 @@ img { max-width: 100%; }
   .allies__grid { grid-template-columns: 1fr; }
 }
 
+/* Las tarjetas de aliados muestran únicamente la información de cada marca. */
+.ally-card::before { content: none; display: none; }
+.ally-card div > p:last-child { text-align: justify; text-justify: inter-word; }
+
 @media (max-width: 600px) {
   .container { width: min(100% - 1.25rem, 1120px); }
   .topbar { min-height: 68px; gap: .65rem; }
