@@ -31,7 +31,7 @@ if (alliesGrid) {
       <h3>Farmasi</h3>
       <p>Línea turca de belleza, skincare y nutrición, con la oportunidad de emprender desde casa y crear tu propio equipo.</p>
     </div>
-    <a class="ally-card__link" href="https://www.instagram.com/sofyfloresq?exln=ZTBvcG81a245ZzE=" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
+    <a class="ally-card__link" href="https://www.instagram.com/farmasiofficial?vrfl=aTMwbXVvNmc2N3I4" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
   `;
   alliesGrid.append(farmasiCard);
 
