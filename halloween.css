@@ -83,6 +83,7 @@ img { max-width: 100%; }
 /* Las tarjetas de aliados muestran únicamente la información de cada marca. */
 .ally-card::before { content: none; display: none; }
 .ally-card div > p:last-child { text-align: justify; text-justify: inter-word; }
+.prize-grid--single { grid-template-columns: minmax(0, 1fr); max-width: 520px; }
 
 @media (max-width: 600px) {
   .container { width: min(100% - 1.25rem, 1120px); }
