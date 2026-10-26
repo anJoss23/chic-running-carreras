@@ -47,6 +47,19 @@ if (alliesGrid) {
     <a class="ally-card__link" href="https://www.instagram.com/pettycanpetshop?vrfl=MTQxN2Z6bHVybWY0YQ==" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
   `;
   alliesGrid.append(pettycanCard);
+
+  const movaCard = document.createElement("article");
+  movaCard.className = "ally-card";
+  movaCard.innerHTML = `
+    <div class="ally-card__logo"><img src="assets/sponsors/mova.png" alt="Logo de Mova" /></div>
+    <div>
+      <p class="ally-card__label">Centro de entrenamiento</p>
+      <h3>Mova</h3>
+      <p>Somos un centro de entrenamiento exclusivo para mujeres.</p>
+    </div>
+    <a class="ally-card__link" href="https://www.instagram.com/mova_women?mdxt=MTEydXBjOGx6NDF4cw==" target="_blank" rel="noopener noreferrer">Ver en Instagram <span aria-hidden="true">→</span></a>
+  `;
+  alliesGrid.append(movaCard);
 }
 
 const countdown = document.querySelector("[data-event-date]");
